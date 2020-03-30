@@ -7,6 +7,7 @@ body{
     --background-color: rgb(243, 235, 235);
     background-color: var( --background-color);
     --primary-color: rgb(235, 239, 245);
+    --active-color: #fe019a;
     font-family: poppins;
 }
 
@@ -100,11 +101,15 @@ body{
 
 }
 
-.inner-inner-record{
-    width: 160px;
-    height:160px;
+.inner-inner-record img{
+    width:  160px;
+    height: 160px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .title{
     grid-area: "title";
@@ -134,13 +139,15 @@ body{
 #bigButtonactive{
     height: 55px;
     width: 55px;
-    background-color: var(--background-color);
-    border: 2px solid var(--background-color);
+    background-color: var(--active-color);
+    /* border: 2px solid lightpink; */
     border-radius: 50%;
     box-shadow: 10px 10px 25px lightgray,
                 -20px -20px 25px white,
                  20px -20px 25px white,
-                -20px -20px 15px white;
+                -20px -20px 15px white,
+                inset -5px -5px 15px #fdb0c0,
+                inset  5px 5px 15px rgb(157, 1, 95);
 
 }
 
